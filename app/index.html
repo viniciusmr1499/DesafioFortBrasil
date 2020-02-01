@@ -8,6 +8,7 @@
     <title>Desafio - FortBrasil</title>
     <link rel="stylesheet" href="../public/css/dest/bootstrap.min.css">
     <link rel="stylesheet" href="../public/css/dest/style.css">
+    <link rel="stylesheet" href="../public/resources/jquery-confirm/dist/jquery-confirm.min.css">
 </head>
 <body class="theme__desafio">
     <div class="question">
@@ -60,30 +61,30 @@
     </div>
    <div id="main">
         <form class="box container" method="" action="">
-            <div class="form-group"> 
-                <div class="content row d-flex justify-content-center">
+            <div class="text-center">
+                <div class="row d-flex justify-content-center">
                     <div class="col-md-10 mt-2">
-                        <input type="text" class="form-control form-control-sm" name="numerico" placeholder="Entre com n° telefone para ser impresso">
+                        <input type="text" class="form-control form-control-sm" name="numerico" minlength="6" placeholder="Entre com n° telefone para ser impresso">
                     </div>
     
                     <div class="col-md-10 mt-2">
-                        <input type="text" class="form-control form-control-sm" name="numerico" placeholder="Entre com n° telefone para ser impresso">
-                    </div> 
+                        <input type="text" class="form-control form-control-sm" name="numerico" minlength="6" placeholder="Entre com n° telefone para ser impresso">
+                    </div>
                 </div>
-
-                <div class="div.col-md-12 ml-5 pl-1 pt-3" style="margin:0 auto 0 0; margin-left: 1rem;">
+                <div class="div.col-md-12 pt-3">
                     <!-- <label class="p__text">Adicionar novo campo</label> -->
-                    <button type="button" id="toggle" style="cursor:pointer;" class="btn btn-success btn-sm" onclick="calculator()"><i class="fas fa-plus"></i> Adicionar</button>
-                    <button type="button" onclick="" style="cursor: pointer;" class="btn btn-primary btn-sm"><i class="fas fa-paper-plane"></i> Enviar</button>
+                    <button type="button" class="text__button btn btn-success btn-sm" onclick="createField()"><i class="fas fa-plus"></i> Adicionar</button>
+                    <button type="button" onclick="result();" class="text__button btn btn-primary btn-sm"><i class="fas fa-paper-plane"></i> Enviar</button>
                 </div>
-            </div class="row" >
+            </div>
             
         </form>
+       
        
         <div class="output p-2">
             <div class="row">
                 <div class="col-md-12">
-                    <p class="p__text target"></p>
+                    <p class="p__text" id="target"></p>
                 </div>
             </div>
         </div>
@@ -94,5 +95,8 @@
     <script src="../public/js/popper.js"></script>
     <script src="../public/js/bootstrap.min.js"></script>
     <script src="../public/js/script.js"></script>
+    <script src="../public/resources/jquery-confirm/dist/jquery-confirm.min.js"></script>
+    <script src="../public/resources/jquery-mask/dist/jquery.mask.min.js"></script>
+    <script src="../public/js/validacoes.js"></script>
 </body>
 </html>

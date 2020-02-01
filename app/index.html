@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../public/ficheiro/logo.png" type="image/x-icon">
+    <title>Desafio - FortBrasil</title>
+    <link rel="stylesheet" href="../public/css/dest/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/dest/style.css">
+</head>
+<body class="theme__desafio">
+    <div class="question">
+        <h1 class="h1_title">Problema:</h1>
+        <div class="enunciated">
+            <p class="p__text pb-2">
+                Com uma grande quantidade de clientes reclamando, a companhia telefônica da
+                cidade se ver obrigada a melhorar os seus serviços. Mas com um orçamento limitado
+                a empresa teve que adotar a estratégia de reduzir os gastos em certos setores para
+                investir em outros mais essenciais.
+            </p>
+            <p class="p__text pb-2">
+                Um dos setores que teve redução de verba foi o de impressão de listas telefônicas.
+                Com menos dinheiro o setor não conseguirá comprar toner suficiente para imprimir
+                as listas telefônicas.
+            </p>
+            <p class="p__text pb-2">
+                Como os números dos telefones são impressos alinhados na vertical, foi sugerida a
+                seguinte solução: a partir do segundo número de telefone impresso, os dígitos
+                iniciais do próximo número a ser impresso que coincidirem com os do número acima
+                são omitidos, ficando apenas um espaço em branco.
+            </p>
+            <p class="p__text pb-2">
+                Exemplo: a impressão dos números 535456, 535488, 536566 e 835456 resultaria em:<br>
+                <center style="color:#333;font-size:1.2rem; font-weight:bold; line-height:21px" class='pb-3 pt-2'>&nbsp;5 3 5 4 5 6<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8 8<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6 5 6 6<br>
+                &nbsp;8 3 5 4 5 6</center> 
+
+            </p>
+            <p class="p__text pb-2">
+                Note que esta impressão economizou a impressão de 6 caracteres. Para saber se a
+                economia será suficiente, o setor de impressão quer saber o número máximo de
+                caracteres que podem ser omitidos. No entanto, como em qualquer cidade grande,
+                são vários os números telefônicos e eles não querem gastar homens-hora para
+                calcular manualmente este valor. Então cabe a você, novo empregado da companhia,
+                automatizar a economia feita pelo toner, no número de caracteres.
+            </p>
+            <p class="p__text pb-2">
+                Desenvolva um programa em uma linguagem de programação qualquer, que receba
+                como entrada: Um número <strong style="color:#000;font-weight:bold;">N</strong> que representa a quantidade de números a serem
+                impressos e em seguida leia o número de telefone <strong style="color:#000;font-weight:bold;">X</strong> (N vezes). E como saída retorne
+                o maior número possível de caracretes economizados no processo.
+            </p>
+        </div>
+    </div>
+    <div class="titles">
+        <h1 class="title__text">Exemplo de Entrada</h1>
+        <h1 class="title__text">Exemplo de Saída</h1>
+    </div>
+   <div id="main">
+        <form class="box container" method="" action="">
+            <div class="form-group"> 
+                <div class="content row d-flex justify-content-center">
+                    <div class="col-md-10 mt-2">
+                        <input type="text" class="form-control form-control-sm" name="numerico" placeholder="Entre com n° telefone para ser impresso">
+                    </div>
+    
+                    <div class="col-md-10 mt-2">
+                        <input type="text" class="form-control form-control-sm" name="numerico" placeholder="Entre com n° telefone para ser impresso">
+                    </div> 
+                </div>
+
+                <div class="div.col-md-12 ml-5 pl-1 pt-3" style="margin:0 auto 0 0; margin-left: 1rem;">
+                    <!-- <label class="p__text">Adicionar novo campo</label> -->
+                    <button type="button" id="toggle" style="cursor:pointer;" class="btn btn-success btn-sm" onclick="calculator()"><i class="fas fa-plus"></i> Adicionar</button>
+                    <button type="button" onclick="" style="cursor: pointer;" class="btn btn-primary btn-sm"><i class="fas fa-paper-plane"></i> Enviar</button>
+                </div>
+            </div class="row" >
+            
+        </form>
+       
+        <div class="output p-2">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="p__text target"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../public/js/jquery-3.4.1.min.js"></script>
+    <script src="../public/js/popper.js"></script>
+    <script src="../public/js/bootstrap.min.js"></script>
+    <script src="../public/js/script.js"></script>
+</body>
+</html>

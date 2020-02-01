@@ -1,0 +1,8 @@
+.theme__desafio{
+    /* background:linear-gradient(120deg, #3498db, #8244ad,#3498db);
+    background:linear-gradient(to left, #40301B,#806037,#FFC06E,#E6AD63 ); */
+    background:linear-gradient(120deg,#148028,#75FF8F,#29FF50,#3B8047 );
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

@@ -1,0 +1,12 @@
+@import "../dest/fontawesome-free/css/all.min.css";
+@import "../dest/reset.css";
+@import "../block/box.css";
+@import "../block/logomarca.css";
+@import "../modifier/theme.css";
+@import "../modifier/fontes.css";
+
+
+html {
+    scroll-behavior: smooth;
+}
+

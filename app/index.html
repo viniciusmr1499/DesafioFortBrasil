@@ -33,7 +33,7 @@
             </p>
             <p class="p__text pb-2">
                 Exemplo: a impressão dos números 535456, 535488, 536566 e 835456 resultaria em:<br>
-                <center style="color:#333;font-size:1.2rem; font-weight:bold; line-height:21px" class='pb-3 pt-2'>&nbsp;5 3 5 4 5 6<br>
+                <center style="color:#0f5133;font-size:1.2rem; font-weight:bold; line-height:21px" class='pb-3 pt-2'>&nbsp;5 3 5 4 5 6<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8 8<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6 5 6 6<br>
                 &nbsp;8 3 5 4 5 6</center> 
@@ -49,18 +49,18 @@
             </p>
             <p class="p__text pb-2">
                 Desenvolva um programa em uma linguagem de programação qualquer, que receba
-                como entrada: Um número <strong style="color:#000;font-weight:bold;">N</strong> que representa a quantidade de números a serem
-                impressos e em seguida leia o número de telefone <strong style="color:#000;font-weight:bold;">X</strong> (N vezes). E como saída retorne
+                como entrada: Um número <strong style="color:#0f5133;font-weight:bold;">N</strong> que representa a quantidade de números a serem
+                impressos e em seguida leia o número de telefone <strong style="color:#0f5133;font-weight:bold;">X</strong> (N vezes). E como saída retorne
                 o maior número possível de caracretes economizados no processo.
             </p>
         </div>
     </div>
-    <div class="titles">
+    <div class="message">
         <h1 class="title__text">Exemplo de Entrada</h1>
         <h1 class="title__text">Exemplo de Saída</h1>
     </div>
-   <div id="main">
-        <form class="box container" method="" action="">
+    <div id="main">
+        <form class="box" method="" action="">
             <div class="text-center">
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-10 mt-2">
@@ -73,24 +73,30 @@
                 </div>
                 <div class="div.col-md-12 pt-3">
                     <!-- <label class="p__text">Adicionar novo campo</label> -->
-                    <button type="button" class="text__button btn btn-success btn-sm" onclick="createField()"><i class="fas fa-plus"></i> Adicionar</button>
-                    <button type="button" onclick="result();" class="text__button btn btn-primary btn-sm"><i class="fas fa-paper-plane"></i> Enviar</button>
+                    <button type="button" class="text__button btn btn-fortBrasil btn-sm" onclick="createField()"><i class="fas fa-plus"></i> Adicionar Campo</button>
+                    <button type="button" onclick="result();" class="text__button btn btn-send btn-sm"><i class="fas fa-paper-plane"></i> Enviar</button>
                 </div>
             </div>
             
         </form>
-       
-       
+
         <div class="output p-2">
             <div class="row">
                 <div class="col-md-12">
-                    <p class="p__text" id="target"></p>
+                    <p class="p__text text-light" id="target"></p>
                 </div>
             </div>
         </div>
     </div>
+   <footer id="footer">
+        <p class="f__text">FORTBRASIL | ESTÁGIO 2.0 © </p>
+        <div class="logo">
+            <img src="../public/ficheiro/logo.png" class="img-fluid" alt="Logo">
+        </div>
+    </footer>
+    
 
-
+    
     <script src="../public/js/jquery-3.4.1.min.js"></script>
     <script src="../public/js/popper.js"></script>
     <script src="../public/js/bootstrap.min.js"></script>
@@ -98,5 +104,11 @@
     <script src="../public/resources/jquery-confirm/dist/jquery-confirm.min.js"></script>
     <script src="../public/resources/jquery-mask/dist/jquery.mask.min.js"></script>
     <script src="../public/js/validacoes.js"></script>
+    <script>
+        now = new Date();
+        let p = document.querySelector('.f__text');
+        p.innerHTML += now.getFullYear();
+
+    </script>
 </body>
 </html>

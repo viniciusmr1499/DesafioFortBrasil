@@ -4,6 +4,8 @@
 @import "../block/logomarca.css";
 @import "../modifier/theme.css";
 @import "../modifier/fontes.css";
+@import "../modifier/buttons.css";
+@import "../block/footer.css";
 
 
 html {

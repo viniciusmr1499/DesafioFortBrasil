@@ -1,0 +1,29 @@
+#footer{
+    position: relative;
+    bottom:0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width:100%;
+    height: 13.2rem;
+}
+
+#footer .logo{
+    display: block;
+    width:auto;
+    padding-top: 1rem;
+    text-align: center;
+    margin:0 auto;
+}
+
+.f__text{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    text-transform:capitalize;
+    font-weight: 600;
+    line-height: 25px;
+    color:#0f5133;
+    text-align: center;
+    padding:.2rem .3rem;
+}

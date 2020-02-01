@@ -70,7 +70,7 @@ function result(){
     }
     
     // console.log(cont);
-    return p.innerHTML = `O maior número possível de caracteres economizados no processo foram <strong style='font-weight:bold; font-size:1rem;'>${cont}</strong>`;
+    return p.innerHTML = `O maior número possível de caracteres economizados no processo foi <strong style='font-weight:bold; font-size:1rem;'>${cont}</strong>`;
 }
 
 

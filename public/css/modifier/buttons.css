@@ -1,0 +1,47 @@
+.text__button{
+    font-family: 'Open Sans', sans-serif;
+    color:#ccc;
+    font-size:14px;
+    cursor:pointer;
+    transition: .2s;
+}
+.text__button:hover{
+    color:#fff;
+}
+
+.btn-fortBrasil{
+    transition: .3s;
+    background: #D1D161;
+    border-radius: 100px;
+    text-align: center;
+    color: #0F5133;
+    font-family:'Open Sans', sans-serif; ;
+    font-weight: bold;
+    border: none;
+}
+.btn-fortBrasil:hover{
+    color:#333;
+}
+#main .btn-send{
+    outline:none !important;
+    box-shadow: none !important;
+    border-color: none !important;
+    outline-color: none !important;
+}
+#main .btn-fortBrasil{
+    outline:none !important;
+    box-shadow: none !important;
+    border-color: none !important;
+    outline-color: none !important;
+}
+.btn-send{
+    transition: .3s;
+    border-radius: 100px;
+    text-align: center;
+    background: #0F5133;
+    font-family:'Open Sans', sans-serif; ;
+    font-weight: bold;
+    border: none;
+    color:#D1D161;
+    padding:.3rem 1rem;
+}

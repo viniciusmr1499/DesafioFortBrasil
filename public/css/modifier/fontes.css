@@ -11,36 +11,13 @@
 }
 
 .h1_title{
+    color:#0f5133;
+    text-transform: uppercase;
     padding:1rem 0;
     font-size:1.3rem;
-    text-transform:capitalize;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
     text-align:left;
-}
-
-.f__text{
-    font-family: 'Open Sans', sans-serif;
-    text-transform:capitalize;
-    font-weight: 600;
-    font-size:14px;
-    color:#ccc;
-}
-
-.titles{
-    background:#fff;
-    position:absolute;
-    top:45%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-    margin: .7rem auto;
-    border: 1px solid rgba(0,0,0,.19);
-    width: 60%;
-    border-radius:5px;
-    padding: .3rem 0;
 }
 
 .p__text{
@@ -52,45 +29,21 @@
     font-weight: 500;
 }
 
-.titles::before{
-    content:'';
-    position: absolute;
-    display: block;
-    top:-80%;
-    width:100%;
-    height:.5px;
-    background:rgba(0,0,0,0.1); 
-}
-
 .form-control::placeholder{
     font-family: 'Open Sans', sans-serif;
     font-size:13px;
-    color:#aaa; 
+    color:#333; 
     font-weight: 600;
 }
 ::-webkit-scrollbar-track {
-    background-color: #3684BF;
-    background-color: #FFC06E;
+    background-color: #D1D161;
 }
 ::-webkit-scrollbar {
     width: 6px;
-    background: #245880;
 }
 ::-webkit-scrollbar-thumb {
-    background: #333;
+    background: #0F5133;
 }
 
-.w-81{
-    width:81.1%;
-}
 
-.text__button{
-    font-family: 'Open Sans', sans-serif;
-    color:#ccc;
-    font-size:14px;
-    cursor:pointer;
-    transition: .2s;
-}
-.text__button:hover{
-    color:#fff;
-}
+
